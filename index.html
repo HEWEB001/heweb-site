@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HEWEB — Criamos sites profissionais que ajudam empresas a crescer online. Desenvolvimento web moderno, rápido e personalizado.">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>HEWEB — Sites Profissionais para o Seu Negócio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="HEWEB — Início">
+        <img src="assets/logo.svg" alt="" class="logo-icon" width="36" height="36">
+        <span class="logo-text">heweb</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">Sobre a HEWEB</a>
+        <a href="#planos" class="nav-link">Serviços e Planos</a>
+        <a href="#extras" class="nav-link">Serviços Extras</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#contacto" class="btn btn-sm btn-primary nav-cta">Solicitar Orçamento</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge">
+            <span class="badge-dot"></span>
+            Agência de Desenvolvimento Web
+          </span>
+          <h1>Criamos sites profissionais que ajudam empresas a <span class="text-gradient">crescer online</span>.</h1>
+          <p>Desenvolvemos sites modernos, rápidos e personalizados para empresas que querem conquistar mais clientes.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="#contacto" class="btn btn-outline">Entrar em Contacto</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="browser-mockup">
+            <div class="browser-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="browser-url">heweb.pt/seu-negocio</span>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"></div>
+              <div class="mock-hero-block"></div>
+              <div class="mock-cards">
+                <div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+          <div class="code-float">
+            <code>
+              <span class="c">// heweb — soluções digitais</span><br>
+              <span class="k">const</span> site = {<br>
+              &nbsp;&nbsp;design: <span class="s">"profissional"</span>,<br>
+              &nbsp;&nbsp;velocidade: <span class="s">"otimizada"</span>,<br>
+              &nbsp;&nbsp;responsivo: <span class="k">true</span>,<br>
+              &nbsp;&nbsp;resultado: <span class="s">"mais clientes"</span><br>
+              };
+            </code>
+          </div>
+          <div class="float-badge float-badge--1">
+            <span class="float-icon">⚡</span>
+            <span>Performance</span>
+          </div>
+          <div class="float-badge float-badge--2">
+            <span class="float-icon">📱</span>
+            <span>Responsivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Sobre a HEWEB</span>
+          <h2>Soluções digitais para empresas que querem crescer</h2>
+          <p>A HEWEB desenvolve soluções digitais para pequenas e médias empresas, combinando tecnologia, design e estratégia online.</p>
+        </div>
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <div class="value-icon">🎯</div>
+            <h3>Profissionalismo</h3>
+            <p>Cada projeto é tratado com dedicação, transparência e atenção aos detalhes — do primeiro contacto à entrega final.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">⚙️</div>
+            <h3>Tecnologia</h3>
+            <p>Utilizamos as melhores práticas de desenvolvimento web para criar sites rápidos, seguros e preparados para o futuro.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">📈</div>
+            <h3>Crescimento Online</h3>
+            <p>Os nossos sites são pensados para atrair clientes, gerar confiança e impulsionar o crescimento do seu negócio na internet.</p>
+          </article>
+          <article class="value-card reveal">
+            <div class="value-icon">✨</div>
+            <h3>Sites Personalizados</h3>
+            <p>Criamos presença digital única para a sua marca — nunca templates genéricos, sempre soluções feitas à medida.</p>
+          </article>
+        </div>
+        <div class="about-text reveal">
+          <p>Somos uma agência especializada em criação de sites para pequenas e médias empresas. Acreditamos que todo negócio merece uma presença online profissional, acessível e eficaz.</p>
+          <p>Combinamos design moderno, código limpo e estratégia digital para entregar sites que não só impressionam visualmente, mas também geram resultados reais para o seu negócio.</p>
+          <ul class="about-list">
+            <li>Sites rápidos e otimizados para motores de busca</li>
+            <li>100% responsivos — computador, tablet e celular</li>
+            <li>Design personalizado para a identidade da sua marca</li>
+            <li>Hospedagem, manutenção e suporte incluídos</li>
+            <li>Desenvolvimento web profissional e design UI/UX moderno</li>
+            <li>SEO, marketing digital e suporte dedicado ao cliente</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section plans" id="planos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Serviços e Planos</span>
+          <h2>Planos feitos para o seu negócio</h2>
+          <p>Escolha o plano ideal para a fase do seu negócio ou fale connosco para uma solução totalmente personalizada.</p>
+        </div>
+        <div class="plans-grid" id="plansGrid"></div>
+      </div>
+    </section>
+
+    <!-- Serviços Extras -->
+    <section class="section extras" id="extras">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Serviços Extras</span>
+          <h2>Potencialize ainda mais a sua presença digital</h2>
+          <p>Serviços complementares para levar o seu negócio ao próximo nível online.</p>
+        </div>
+        <div class="extras-grid" id="extrasGrid"></div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Contacto</span>
+          <h2>Vamos conversar sobre o seu projeto</h2>
+          <p>Entre em contacto connosco e receba um orçamento personalizado para o seu negócio.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Fale connosco</h3>
+            <p>Estamos prontos para ajudar o seu negócio a crescer online. Envie-nos uma mensagem e responderemos o mais breve possível.</p>
+            <div class="contact-box">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div>
+                <small>Email</small>
+                <a href="mailto:contact.heweb@gmail.com">contact.heweb@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="O seu nome" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="company">Empresa</label>
+                <input type="text" id="company" name="company" required placeholder="Nome da empresa" autocomplete="organization">
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="O seu email" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Conte-nos sobre o seu projeto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+            <p class="form-success" id="formSuccess" role="status">Mensagem enviada com sucesso! Entraremos em contacto em breve.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo">
+          <img src="assets/logo.svg" alt="" class="logo-icon" width="36" height="36">
+          <span class="logo-text">heweb</span>
+        </a>
+        <p>Criamos sites profissionais que ajudam empresas a crescer online.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre a HEWEB</a></li>
+          <li><a href="#planos">Serviços e Planos</a></li>
+          <li><a href="#extras">Serviços Extras</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contact.heweb@gmail.com">contact.heweb@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 HEWEB. Todos os direitos reservados.</span>
+      <span>Feito com dedicação em Portugal</span>
+      <a href="admin.html" class="footer-lock" aria-label="Área privada" title="Área privada">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/messages.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

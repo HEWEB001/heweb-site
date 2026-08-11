@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>HEWEB — Área Privada</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <div class="login-page" id="loginView">
+    <div class="login-card">
+      <a href="index.html" class="login-logo">
+        <img src="assets/logo.svg" alt="" width="40" height="40">
+        <span>heweb</span>
+      </a>
+      <div class="login-lock" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h1>Área Privada</h1>
+      <p>Introduza as suas credenciais para aceder às mensagens de contacto.</p>
+      <form id="loginForm" class="login-form">
+        <div class="field">
+          <label for="username">Utilizador</label>
+          <input type="text" id="username" name="username" required autocomplete="username" placeholder="Nome de utilizador">
+        </div>
+        <div class="field">
+          <label for="password">Palavra-passe</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password" placeholder="Palavra-passe">
+        </div>
+        <p class="login-error" id="loginError" hidden>Credenciais inválidas.</p>
+        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+      </form>
+      <a href="index.html" class="back-link">&larr; Voltar ao site</a>
+    </div>
+  </div>
+
+  <!-- Admin -->
+  <div class="admin-page" id="adminView" hidden>
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <a href="index.html" class="admin-logo">
+          <img src="assets/logo.svg" alt="" width="32" height="32">
+          <span>heweb <small>Admin</small></span>
+        </a>
+        <button type="button" class="btn btn-sm btn-outline" id="logoutBtn">Terminar sessão</button>
+      </div>
+    </header>
+
+    <main class="admin-main">
+      <div class="admin-container">
+        <div class="admin-head">
+          <div>
+            <h1>Mensagens de Contacto</h1>
+            <p>Gerencie todas as mensagens enviadas pelo formulário do site.</p>
+          </div>
+          <div class="admin-stats">
+            <div class="stat-card">
+              <strong id="statTotal">0</strong>
+              <span>Total</span>
+            </div>
+            <div class="stat-card stat-unread">
+              <strong id="statUnread">0</strong>
+              <span>Não lidas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-toolbar">
+          <input type="search" id="searchInput" placeholder="Pesquisar por nome, empresa, email..." aria-label="Pesquisar mensagens">
+          <select id="filterSelect" aria-label="Filtrar mensagens">
+            <option value="all">Todas</option>
+            <option value="unread">Não lidas</option>
+            <option value="read">Lidas</option>
+          </select>
+          <button type="button" class="btn btn-sm btn-outline" id="markAllReadBtn">Marcar todas como lidas</button>
+          <button type="button" class="btn btn-sm btn-danger-outline" id="deleteReadBtn">Excluir lidas</button>
+        </div>
+
+        <p class="empty-state" id="emptyState">Ainda não existem mensagens de contacto.</p>
+        <div class="messages-list" id="messagesList"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/messages.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
